@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* DIV MENU SUPERIOR */
+/* Usa-se a Hashtag # para Invocar uma ID */
+#logo {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#título-menuSuperior {
+    margin-left: 160px;
+    margin-top: 60px;
+}
+
+#texto-menuSuperior {
+    margin-left: 160px;
+    margin-top: 25px;
+}
+
+#menusuperior {
+    background-image: url(/IMAGE/fundo-menu.svg);
+    color: aliceblue;
+    padding-bottom: 100px; /* Aumenta o Tamanho da Distância da Borda/Margem Interna da Imagem */
+}
+
+/* DIV MENU INFORMACIONAL */
+#menuinformacional {
+   background-color: #EAECE5;
+   display: grid; /* Cria uma Malha para Organizar melhor o Conteúdo, mas necessita do comando grid-auto-flow (abaixo ↓) para que algo, de fato, aconteça. */
+   grid-auto-flow: column;
+   columns: auto;
+}
+
+/* Usa-se o Ponto . para Invocar uma CLASSE */
+.icone {
+    margin: 50px 0px 50px 100px; /* Sequência → Top - Right - Bottom - Left */
+    padding: 15px; /* Define o Espaçamento Interno entre os ícones e os textos */
+}
+
+.textoinformativo {
+    display: flex;
+    align-items: center;
+}
+
+/* DIV SEÇÃO VIDEO */
+#secaovideo {
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    margin-top: 70px;
+    margin-left: 115px;
+    margin-bottom: 70px;
+}
+
+#secaovideo h1 {
+    color: #247BA0;
+    display: grid;
+    margin-top: 20px;
+    margin-right: 115px;
+}
+
+#secaovideo p{
+    margin-right: 115px;
+}
+
+/* DIV CARROSSEL */
+#carrossel {
+    background-color: #247BA0;
+    padding-bottom: 25px;
+}
+
+#titulo-carrossel {
+    color: aliceblue;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#div-cards {
+    display: grid;
+    grid-auto-flow: column;
+    margin-bottom: 45px;
+}
+
+.card1 {
+    margin-left: 80px;
+    margin-right: 40px;
+}
+
+#Samantha {
+    display: none; /* Esconde o Ítem/Objeto/Imagem da Tela */
+}
+
+#seta-esquerda {
+    display: none;
+}
+
+
+.seta {
+    margin-top: 50%;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.seta:hover {
+    transform: translateY(-7px);
+    transition-duration: 0.3s;
+}
+
+.seta2 {
+    margin-top: 50%;
+    cursor: pointer;
+}
+
+.seta2:hover {
+    transform: translateY(-7px);
+    transition-duration: 0.3s;
+}
+/* DIV FORMULÁRIO */
+#formulario {
+    text-align: center;
+}
+
+#titulo-formulario {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #383838;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 350px;
+    height: 30px;
+    background-color: #EAECE5;
+    margin: 15px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 50px;
+    background: #247BA0;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    border-radius: 5px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover, .button:active, .button:active{
+    background: rgb(255, 255, 255);
+    color: #247BA0;
+    transition: background 0.2s; /* Transição de Cor do Background */
+    box-shadow: 0px 10px 15px #111314b0;
+    transition-duration: 0.3s;
+    transform: scale(1.1); /* Cria uma Animação ao Aumentar o Tamanho (escala) do botão. */
+}
